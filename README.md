@@ -1,2 +1,2 @@
 # Annual-Medical-Expenditure-Prediction
-In this project, I will predict annual medical expenditures for health insurance buyers. The codes and report have been uploaded as separate files.
+In this project, I predict annual medical expenditures for clients of a fictionary insurance company, so that they may charge appropriate premiums.
