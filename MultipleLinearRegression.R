@@ -17,7 +17,6 @@ newdata$region=factor(newdata$region, levels=c('southeast','southwest','northeas
 
 #Transforming Age and BMI to fit a normal distribution
 besttransform= function (datacolumn) {
-  set.seed(123456)
   library(bestNormalize)
   BN_obj <- bestNormalize(datacolumn, allow_lambert_s = TRUE)
   # Perform transformation
@@ -45,7 +44,6 @@ newdatalr$age=output_age$data_Transformed
 newdatalr=data[-c(117,848,1048,1318),]
 
 #Test/Train split
-set.seed(123456)
 library(caTools)
 split=sample.split(newdatalr$charges,SplitRatio=0.8)
 training_set=subset(newdatalr,split==TRUE)
